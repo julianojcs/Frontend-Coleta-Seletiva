@@ -42,7 +42,7 @@
 
 #page-home .content main a {
     width: 100%;
-    max-width: 360px;
+    max-width: 380px;
     height: 72px;
     background: #79ab7f;
     border-radius: 8px;
@@ -55,7 +55,7 @@
     margin-top: 40px;
 }
 
-#page-home .content main a span {
+#page-home .content main a span:first-child {
     display: block;
     background: rgba(0, 0, 0, 0.08);
     width: 72px;
@@ -73,14 +73,17 @@
     height: 20px;
 }
 
-#page-home .content main a strong {
+#page-home .content main a span:last-child {
     flex: 1;
     text-align: center;
     color: #FFF;
+    /* font-weight: bold; */
+    font-size: 1.3rem;
+    padding: 5px;
 }
 
 #page-home .content main a:hover {
-    background: #79ab7f;
+    background: #06c71c;
 }
 
 @media(max-width: 900px) {

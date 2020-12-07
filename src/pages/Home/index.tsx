@@ -2,7 +2,7 @@ import React from 'react'
 import { FiLogIn } from 'react-icons/fi'
 import { Link } from 'react-router-dom'
 import logo from '../../assets/logo.svg'
-import './style.css'
+import './styles.css'
 
 const Home: React.FC = () => {
     return (
@@ -14,13 +14,13 @@ const Home: React.FC = () => {
 
                 <main>
                     <h1>Coleta Seletiva e reciclagem em geral.</h1>
-                    <p>Reciclagem de materiais diversos, tais como, papel, plástico, metal, pilhas e baterias, etc.</p>
+                    <p>Reciclagem de materiais diversos, tais como, papel, plástico, metais, pilhas e baterias, vidro,  etc.</p>
 
                     <Link to="/create-location">
                         <span>
                         <FiLogIn />
                         </span>
-                        <strong>Cadastrar novo local de coleta</strong>
+                        <span>Cadastrar novo local de coleta</span>
                     </Link>
                 </main>
             </div>
