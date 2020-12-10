@@ -157,11 +157,11 @@
     align-self: flex-end;
     margin-top: 40px;
     transition: background-color 0.2s;
-    cursor: locationer;
+    cursor: pointer;
 }
 
 #page-create-location form button:hover {
-    background: #79ab7f;
+    background: var(--hover-color);
 }
 
 .items-grid {
@@ -171,12 +171,24 @@
     list-style: none;
 }
 
+.items-grid li:hover {
+    box-shadow: 5px 5px 6px 0px rgba(0, 0, 0, 0.12);
+}
+
+.item-title {
+    color: var(--hover-color);
+    font-size: 16px;
+    font-weight: bold;
+    top: 1.4rem;
+    position: relative;
+}
+
 .items-grid li {
     background: #fff5e7;
     border: 2px solid #fff5e7;
     height: 180px;
     border-radius: 8px;
-    padding: 24px;
+    padding: 20px;
 
     display: flex;
     flex-direction: column;

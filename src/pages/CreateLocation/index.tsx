@@ -35,7 +35,7 @@ const CreateLocation: React.FC = () => {
     }, []);
 
     const handleMapClick = useCallback((event: LeafletMouseEvent): void => {
-        //console.log(event);
+        console.log(event.latlng);
         setSelectedMapPosition([
             event.latlng.lat,
             event.latlng.lng,
@@ -177,6 +177,7 @@ const CreateLocation: React.FC = () => {
                                     className={selectedItems.includes(item.id) ? 'selected' : ''}
                                 >
                                     <img src={item.image_url} alt={item.title} />
+                                    <div className="item-title">{item.title}</div>
                                 </li>
                             ))}
                         </ul>
